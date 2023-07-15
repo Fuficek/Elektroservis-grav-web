@@ -1,0 +1,43 @@
+<header class="main--header">
+    <nav class="navbar">
+    <a class="" href=""><img class="navlogo" src="{{ url('theme://images/logo.png') }}" alt="logo" ></a>
+        <menu class="nav__links">
+            {% for p in pages.children.visible %}
+                {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+                {% if p.children.visible.count == 0 %}
+                    <li>
+                        <a class="navlink {{ current_page|e }}" href="{{ p.url|e }}">{{ p.menu|e }}</a>
+                    </li>
+                {% else %}
+                    <li class="has-children">
+                        <a class="navlink {{ current_page|e }}" href="{{ p.url|e }}">{{ p.menu|e }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </menu>
+        <button class="fa fa-bars hamburger menu"></button>
+    </nav>
+    <h1 class="banner-header">Elektroservis <p>Hrabal</p></h1>
+</header>
+
+<div class="overlay">
+    <a class="close">&times;</a>
+    <div class="overlay__content">
+        <ul>
+            {% for p in pages.children.visible %}
+                {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+                {% if p.children.visible.count == 0 %}
+                    <li>
+                        <a class="navlink {{ current_page|e }}" href="{{ p.url|e }}">{{ p.menu|e }}</a>
+                    </li>
+                {% else %}
+                    <li class="has-children">
+                        <a class="navlink {{ current_page|e }}" href="{{ p.url|e }}">{{ p.menu|e }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+

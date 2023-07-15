@@ -1,0 +1,40 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+<div class="zpet">
+    <a href="{{ page.parent.url }}">
+        <div class="sipka"></div>
+        <p>Zpět na boty</p>
+    </a>
+</div>
+
+<div class="pagecontent">
+    <div class="product">
+        <div class="product__images">
+            <img class="product__images__img" src="{{ page.media[page.header.img0].url }}">
+            <div class="product__images__other">
+                <img class="product__images__other__img" src="{{ page.media[page.header.img1].url }}">
+                <img class="product__images__other__img" src="{{ page.media[page.header.img2].url }}">
+                <img class="product__images__other__img" src="{{ page.media[page.header.img3].url }}">
+                <img class="product__images__other__img" src="{{ page.media[page.header.img0].url }}">
+            </div>
+        </div>
+        <div class="product__name">
+            <div class="name">
+                <h1>{{ page.header.subtitle }}</h1>
+                <h2>{{ page.header.title }}</h2>
+            </div>
+            <div class="button">
+                <a href="https://discord.gg/" target="_blank" class="btn41-43 btn-42">
+                    Discord
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="product__text">
+        <h3 >{{ page.header.title }}</h3>
+        <p>{{ page.header.description1 }}</p>
+        <h3 >{{ page.header.subtitle }}</h3>
+        <p>{{ page.header.description2 }}</p>
+    </div>
+</div>
+{% endblock %}

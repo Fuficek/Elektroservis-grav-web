@@ -1,0 +1,91 @@
+:root {
+    --textcolor: #000000;
+    --texthighlight: #171717;
+    --backgroundcolor: #ffffff;
+    --darkerbackgroundcolor: #bdbdbd;
+    --neonpink: #F72585;
+    --darkpink: #B5179E;
+    --teal: #7209B7;
+    --bluebasic: #560BAD;
+    --bluedarker: #480CA8;
+    --bluedark: #3A0CA3;
+    --blueocean: #3F37C9;
+    --blueday: #4361EE;
+    --bluelight: #4895EF;
+    --bluehighlight: #4CC9F0;
+    --bluetransparent: rgba(106, 87, 161, 0.685);
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+}
+
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    -webkit-perspective: 1px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+div.parallax {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    
+}
+
+div.parallax:after {
+    background-image: url("../images/risk-based\ 2.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 120vh;
+    top: -250px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    content: "";
+    transform: translateZ(-1px) scale(2);
+    background-color: var(--backgroundcolor);
+}
+
+div.content-outer {
+    width: 100%;
+    background-color: var(--backgroundcolor);
+    perspective: 2px;
+    -webkit-perspective: 2px;
+        height: fit-content;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-image: url("");
+}
+
+div.content-inner {
+    font-size: 13pt;
+    line-height: 1.40em;
+    padding-top: 100px;
+    margin: 0px auto;
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    height: 200px;
+    width: 100%;
+    background-color: var(--backgroundcolor);
+  }
+
+

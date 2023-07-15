@@ -1,0 +1,19 @@
+title: Elektroservis
+default_lang: cz
+author:
+  name: 'Joe Bloggs'
+  email: joe@example.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Jsme specializovaný elektroservis, který se zaměřuje na kompletní dodávky a práce v oblasti elektrotechniky. Jsme odborníci na průmyslové montáže, elektroinstalace a opravy. Naše služby zahrnují také domovní a zahradní elektroinstalace, hromosvod, revize, montáže a opravy rozvaděčů.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects: null
+routes: null
+blog:
+  route: /blog

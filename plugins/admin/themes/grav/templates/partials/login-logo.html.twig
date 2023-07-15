@@ -1,0 +1,14 @@
+{% if config.plugins.admin.logo_text %}
+    <h1 class="text-logo">
+        {{ config.plugins.admin.logo_text }}
+    </h1>
+{% else %}
+    <h1 class="{{ custom_login_logo ? 'custom-logo' : 'custom-logo' }}">
+        {{ title }}
+        {% if custom_login_logo %}
+            {% include('@admin-images/logo.png') %}
+        {% else %}
+            {% include('@admin-images/logo.svg') %}
+        {% endif %}
+    </h1>
+{% endif %}

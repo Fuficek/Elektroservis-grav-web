@@ -1,0 +1,8 @@
+enabled: true
+dropdown:
+  enabled: true
+
+assets:
+  js:
+    - '@self'
+    - js/script.js

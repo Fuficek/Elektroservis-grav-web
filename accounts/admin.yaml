@@ -1,0 +1,11 @@
+state: enabled
+email: matalacek49fuf@gmail.com
+fullname: admin
+title: admin
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$XrZi7eo24TA/Vr5Pc/75QuaOtp7KBtw1vTbiz6VCmptFNIq9PMrNa

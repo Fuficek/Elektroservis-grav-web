@@ -1,0 +1,8 @@
+<div class="product-images">
+    <img class="product-img" src="{{ page.media['1.png'].url }}">
+    <div class="other-pics">
+        {% for image in page.media['/'].images %}
+            <img class="low-img" src="{{ image.url }}">
+        {% endfor %}
+    </div>
+</div>
