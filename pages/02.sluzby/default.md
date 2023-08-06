@@ -1,5 +1,5 @@
 ---
-title: 'Služby'
+title: Služby
 ---
 
 <div class="grid-container">
@@ -65,9 +65,6 @@ title: 'Služby'
       <li>kalové čerpadlo</li>
       <li>křovinořez, motorová pila (pro prořezávání a přípravu kabelových tras)</li>
     </ul>
-    <div>
-      <a href="{{ base_url_relative }}/sluzby/prace-s-plosinou" class="button btn41-43 btn-42">Práce s plošinou</a>
-    </div>
   </div>
 
   <div class="grid-item">

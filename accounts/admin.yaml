@@ -2,10 +2,15 @@ state: enabled
 email: matalacek49fuf@gmail.com
 fullname: admin
 title: admin
+hashed_password: $2y$10$XrZi7eo24TA/Vr5Pc/75QuaOtp7KBtw1vTbiz6VCmptFNIq9PMrNa
+language: cs
+content_editor: default
+twofa_enabled: false
+twofa_secret: RWWEF2GJXRM6JRIDR6DKRSLW6Y5QCI2S
+avatar: {  }
 access:
+  site:
+    login: true
   admin:
     login: true
     super: true
-  site:
-    login: true
-hashed_password: $2y$10$XrZi7eo24TA/Vr5Pc/75QuaOtp7KBtw1vTbiz6VCmptFNIq9PMrNa

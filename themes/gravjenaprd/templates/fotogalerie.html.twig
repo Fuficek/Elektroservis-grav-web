@@ -1,0 +1,44 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+     {% do assets.addCss('theme://css/lightgallery.css', 85) %}
+{% endblock %}
+
+
+{% block content %}    
+<style>
+/* Gallery container */
+.gallery--list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+.image--item {
+  font-size: 30px;
+  text-align: center;
+}
+
+  .image--preview {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .page__heading{
+     margin-bottom: 1em;
+  }
+    </style>
+     {{ page.content|raw }}
+
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+        <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+        {% do assets.addJs('theme://js/lg-rotate.js') %}
+        <script>
+            lightGallery(document.getElementById('lightgallery'));
+        </script>
+{% endblock %}

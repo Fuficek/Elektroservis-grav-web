@@ -2,7 +2,10 @@
 title: 'Práce s plošinou'
 ---
 
+
+
 <div class="grid-container">
+
   <div class="grid-item span2 row1"><h1 class="page__heading span-p">PRÁCE S PLOŠINOU</h1></div>
   <div class="grid-item flex-collumn">
   <h2 class="section-header">Práce s montážní plošinou</h2>

@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.addJs('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js') %}
+    
+{% endblock %}
+
+{% block content %}
+    {{ page.content|raw }}
+{% endblock %}
