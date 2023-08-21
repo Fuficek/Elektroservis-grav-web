@@ -1,0 +1,364 @@
+/*-------------------- ASSETS AND ANIMATIONS -------------------------*/
+
+/* Sipka zpet*/
+.zpet{
+  margin-left: 5%;
+  margin-top: 3%;
+  height: 26px;
+}
+.zpet a {
+  display: flex;
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  transition: 0.3s ease;
+  width: 210px;
+}
+.zpet a:hover{
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+.sipka{
+  content: url("data:image/svg+xml,%3csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 34.075 34.075' style='enable-background:new 0 0 34.075 34.075%3b' xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath style='fill:%23010002%3b' d='M24.57%2c34.075c-0.505%2c0-1.011-0.191-1.396-0.577L8.11%2c18.432c-0.771-0.771-0.771-2.019%2c0-2.79 L23.174%2c0.578c0.771-0.771%2c2.02-0.771%2c2.791%2c0s0.771%2c2.02%2c0%2c2.79l-13.67%2c13.669l13.67%2c13.669c0.771%2c0.771%2c0.771%2c2.021%2c0%2c2.792 C25.58%2c33.883%2c25.075%2c34.075%2c24.57%2c34.075z'/%3e%3c/g%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3cg%3e%3c/g%3e%3c/svg%3e");
+  width: 20px;
+  height: 20px;
+  margin-right: 0.4%;
+}
+/* Shake animations*/
+@keyframes shake {
+  0% {
+    transform: translate(3px, -2px);
+  }
+
+  25% {
+    transform: translate(-3px, 2px);
+  }
+
+  25% {
+    transform: translate(1px, -1px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-moz-keyframes shake {
+  0% {
+    -moz-transform: translate(3px, 0);
+  }
+
+  50% {
+    -moz-transform: translate(-3px, 0);
+  }
+
+  100% {
+    -moz-transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(3px, 0);
+  }
+
+  50% {
+    -webkit-transform: translate(-3px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+@-ms-keyframes shake {
+  0% {
+    -ms-transform: translate(3px, 0);
+  }
+
+  50% {
+    -ms-transform: translate(-3px, 0);
+  }
+
+  100% {
+    -ms-transform: translate(0, 0);
+  }
+}
+
+@-o-keyframes shake {
+  0% {
+    -o-transform: translate(3px, 0);
+  }
+
+  50% {
+    -o-transform: translate(-3px, 0);
+  }
+
+  100% {
+    -o-transform: translate(0, 0);
+  }
+}
+/* Mapy.cz MAPA */
+
+
+.map{
+  width:60vw;
+  height: 30vw;
+}
+     
+    
+/* GRAV ERROR CSS*/
+
+.error-container{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25vh;
+  background-color: var(--backgroundcolor);
+  align-items: center;
+}
+
+.error-container .btn41-43{
+  padding: 1vw 7vw;
+}
+
+/* Basic Button + animations*/
+.button{
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+}
+.btn41-43 {
+  padding: 15px 50px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: var(--textcolor);
+  outline: none !important;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.75s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:0 0 5px #888888;
+}
+
+.btn-42 {
+  border: 2px solid rgb(0, 0, 0);
+  z-index: 1;
+  color: var(--backgroundcolor);
+}
+
+.btn-42:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.38s ease;
+}
+
+.btn-42:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-42:hover:after {
+  top: 0;
+  height: 100%;
+}
+
+.btn-42:active {
+  top: 2px;
+}
+
+/* Scroll Wheel + animations*/
+.anim-element{
+  margin: 100px;
+}
+.anim-scroll {
+  border: 2px solid rgba(255, 255, 255, 0.700);
+  border-radius: 22px;
+  height: 40px;
+  position: relative;
+  width: 20px;
+  }
+  
+  .anim-scroll--wheel {
+  animation: scroll 2.5s ease infinite;
+  background: rgba(255, 255, 255, 0.700);
+  border-radius: 30px;
+  height: 8px;
+  left: calc(50% - 1.5px);
+  position: absolute;
+  right: 50%;
+  top: 8px;
+  width: 3px;
+  }
+  
+  @keyframes scroll {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(16px); }
+  51% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(0); }
+  }
+
+/* Popup word animation*/
+
+@keyframes pop-word {
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bar-scale {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1) translate(4px, 1px) rotate(8deg);
+  }
+
+  100% {
+    transform: scale(0) translate(4px, 1px) rotate(8deg);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    text-shadow: 0 0 8px red;
+  }
+}
+
+
+.word {
+  display: block;
+
+  animation: show 0.01s forwards, pop-word 0.9s forwards;
+  animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+  opacity: 0;
+
+  transform: rotateX(120deg);
+  transform-origin: 50% 100%;
+}
+
+.word-delay {
+  animation-delay: 1s;
+}
+.word-delay-4{
+  animation-delay: 4s;
+}
+
+.superscript {
+  position: relative;
+  animation-delay: 3.6s;
+
+  animation-duration: 0.25s;
+  animation-name: shimmer;
+
+  vertical-align: text-top;
+}
+
+/* bars */
+.superscript::before {
+  --bar-width: 25%;
+
+  position: absolute;
+
+  top: 37%;
+  left: 47%;
+  width: 14%;
+  height: 48%;
+
+  animation: bar-scale 0.25s linear 3s 1 forwards;
+
+  background: linear-gradient(
+    to right,
+    white var(--bar-width),
+    transparent var(--bar-width) calc(100% - var(--bar-width)),
+    white calc(100% - var(--bar-width))
+  );
+
+  content: "";
+
+  transform: scaleY(var(--bar-scale-y));
+}
+
+/* sparkle */
+.superscript::after {
+  --size: 10rem;
+
+  position: absolute;
+
+  top: -5%;
+  left: -85%;
+
+  width: var(--size);
+  height: var(--size);
+
+  animation: sparkle 0.4s linear 3.5s 1 forwards;
+
+  background: radial-gradient(
+      circle at center,
+      rgb(252 249 241 / 94%) 0% 7%,
+      transparent 7% 100%
+    ),
+    conic-gradient(
+      transparent 0deg 18deg,
+      var(--sparkle-color) 18deg,
+      transparent 20deg 40deg,
+      var(--sparkle-color) 40deg,
+      transparent 43deg 87deg,
+      var(--sparkle-color) 87deg,
+      transparent 95deg 175deg,
+      var(--sparkle-color) 175deg,
+      transparent 178deg 220deg,
+      var(--sparkle-color) 220deg,
+      transparent 222deg 270deg,
+      var(--sparkle-color) 270deg,
+      transparent 275deg 300deg,
+      var(--sparkle-color) 300deg,
+      transparent 303deg 360deg
+    );
+
+  border-radius: 50%;
+  clip-path: polygon(
+    50% 0,
+    59.13% 26.64%,
+    85.13% -2.35%,
+    100% 50%,
+    50% 100%,
+    0 50%,
+    31.39% 34.86%
+  );
+
+  content: "";
+
+  filter: blur(1px);
+
+  transform: scale(0);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  /* sparkle */
+  .superscript::after {
+    --size: 6rem;
+  }
+}
+

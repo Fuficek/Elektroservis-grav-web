@@ -1,24 +1,3 @@
-:root {
-    --textcolor: #000000;
-    --texthighlight: #171717;
-    --backgroundcolor: #ffffff;
-    --darkerbackgroundcolor: #bdbdbd;
-    --neonpink: #F72585;
-    --darkpink: #B5179E;
-    --teal: #7209B7;
-    --bluebasic: #560BAD;
-    --bluedarker: #480CA8;
-    --bluedark: #3A0CA3;
-    --blueocean: #3F37C9;
-    --blueday: #4361EE;
-    --bluelight: #4895EF;
-    --bluehighlight: #4CC9F0;
-    --bluetransparent: rgba(106, 87, 161, 0.685);
-    font-family: 'Archivo', sans-serif;
-    font-size: 16px;
-}
-
-
 html, body {
     padding: 0px;
     margin: 0px;
