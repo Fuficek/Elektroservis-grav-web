@@ -94,7 +94,6 @@
   /* if needed add styles for the current active link, the code is ready for it*/
 }
 
-
       /* Mobile Nav */
     .page-navbar__hamburger {
       padding: 0;
@@ -227,6 +226,60 @@
     text-decoration: underline;
   }
 }
-
-
 /*============================ FOOTER ==========================*/
+
+/*----------------------- SECTIONS & ALIGNMENT ------------------ */ 
+
+.pagecontent{
+  background-color: var(--color-light);
+}
+
+/*------------------------- PAGE ELEMENTS ---------------------- */ 
+
+/* Main page banner */
+.banner-grid{
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100%;
+  flex-direction: column;
+}
+.banner__wrapper{
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner__main-text{
+  color: var(--color-light);
+  max-width: 52vw;
+  font-size: 6vw;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.banner__main-text b{
+  color: var(--color-light);
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  background-color: var(--base-highlight);
+}
+
+.banner__secondary-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  color: var(--color-light);
+  margin-top: 0.2em;
+  font-size: 1vw;
+}
+
+.banner__button{
+  background-color: var(--color-light);
+  padding: 1em 2.3em;
+  border-radius: 50px;
+  width: fit-content;
+  color: var(--base-background-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: ;
+}

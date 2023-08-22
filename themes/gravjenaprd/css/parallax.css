@@ -1,3 +1,13 @@
+:root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --base-background-color: #1D1D1D;
+    --base-highlight: #824DF4;
+    --background-highlight: #2A2A2A;
+    scroll-behavior: smooth;
+}
+
+
 html, body {
     padding: 0px;
     margin: 0px;
@@ -25,7 +35,7 @@ div.parallax {
 }
 
 div.parallax:after {
-    background-image: url("../images/risk-based\ 2.png");
+    background-image: url("../images/Hero\ Section.png");
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -58,9 +68,7 @@ div.content-inner {
     position: absolute;
     bottom: -100px;
     height: 200px;
-    width: 100%;
-    background-color: var(--backgroundcolor);
-    
+    width: 100%;    
   }
 
 
